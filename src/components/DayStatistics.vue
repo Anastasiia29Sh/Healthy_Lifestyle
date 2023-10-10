@@ -114,7 +114,7 @@ function checkDate(selectedDate) {
 }
 
 function formatDate(date) {
-  let day = date.split("-")[2].replace(/0+/g, "");
+  let day = date.split("-")[2].replace(/^0+/g, "");
   let month = date.split("-")[1];
   let year = date.split("-")[0];
   return new Date(year + ", " + month + ", " + day);
