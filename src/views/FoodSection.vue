@@ -90,7 +90,7 @@
         class="btn-add-food mt-4"
         @click="
           $router.push(
-            `/FoodSelection/${route.params.date}/${route.params.section}`
+            `/healthy_lifestyle/FoodSelection/${route.params.date}/${route.params.section}`
           )
         "
       >

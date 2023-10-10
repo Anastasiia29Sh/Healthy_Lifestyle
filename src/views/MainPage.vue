@@ -21,7 +21,11 @@
               <img src="../assets/breakfast.png" alt="" class="meal-img" />
               <div
                 class="w-100 pa-2 ml-2 div-section"
-                @click="$router.push(`/FoodSection/${selectedDate}/breakfast`)"
+                @click="
+                  $router.push(
+                    `/healthy_lifestyle/FoodSection/${selectedDate}/breakfast`
+                  )
+                "
               >
                 <p>Завтрак</p>
               </div>
@@ -30,7 +34,9 @@
                 variant="tonal"
                 color="#1e3e11"
                 @click="
-                  $router.push(`/FoodSelection/${selectedDate}/breakfast`)
+                  $router.push(
+                    `/healthy_lifestyle/FoodSelection/${selectedDate}/breakfast`
+                  )
                 "
               >
                 <v-icon>mdi-plus</v-icon>
@@ -42,7 +48,11 @@
               <img src="../assets/lunch.png" alt="" class="meal-img" />
               <div
                 class="w-100 pa-2 ml-2 div-section"
-                @click="$router.push(`/FoodSection/${selectedDate}/lunch`)"
+                @click="
+                  $router.push(
+                    `/healthy_lifestyle/FoodSection/${selectedDate}/lunch`
+                  )
+                "
               >
                 <p>Обед</p>
               </div>
@@ -50,7 +60,11 @@
                 icon
                 variant="tonal"
                 color="#1e3e11"
-                @click="$router.push(`/FoodSelection/${selectedDate}/lunch`)"
+                @click="
+                  $router.push(
+                    `/healthy_lifestyle/FoodSelection/${selectedDate}/lunch`
+                  )
+                "
               >
                 <v-icon>mdi-plus</v-icon>
               </v-btn></v-sheet
@@ -61,7 +75,11 @@
               <img src="../assets/dinner.png" alt="" class="meal-img" />
               <div
                 class="w-100 pa-2 ml-2 div-section"
-                @click="$router.push(`/FoodSection/${selectedDate}/dinner`)"
+                @click="
+                  $router.push(
+                    `/healthy_lifestyle/FoodSection/${selectedDate}/dinner`
+                  )
+                "
               >
                 <p>Ужин</p>
               </div>
@@ -69,7 +87,11 @@
                 icon
                 variant="tonal"
                 color="#1e3e11"
-                @click="$router.push(`/FoodSelection/${selectedDate}/dinner`)"
+                @click="
+                  $router.push(
+                    `/healthy_lifestyle/FoodSelection/${selectedDate}/dinner`
+                  )
+                "
               >
                 <v-icon>mdi-plus</v-icon>
               </v-btn>

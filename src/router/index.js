@@ -2,27 +2,27 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-        path: '/:date?/',
+        path: '/healthy_lifestyle/:date?/',
         name: 'Home',
         component: () => import('@/views/MainPage.vue'),
       },
       {
-        path: '/foodSelection/:date/:section',
+        path: '/healthy_lifestyle/foodSelection/:date/:section',
         name: 'FoodSelection',
         component: () => import('@/views/FoodSelection.vue'),
       },
       {
-        path: '/FoodSection/:date/:section',
+        path: '/healthy_lifestyle/FoodSection/:date/:section',
         name: 'FoodSection',
         component: () => import('@/views/FoodSection.vue'),
       },
       {
-        path: '/foodDirectory',
+        path: '/healthy_lifestyle/foodDirectory',
         name: 'FoodDirectory',
         component: () => import('@/views/FoodDirectory.vue'),
       },
       {
-        path: '/statistics',
+        path: '/healthy_lifestyle/statistics',
         name: 'Statistics',
         component: () => import('@/views/StatisticsPage.vue'),
       }

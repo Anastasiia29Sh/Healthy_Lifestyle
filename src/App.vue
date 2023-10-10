@@ -5,15 +5,15 @@
     </v-main>
 
     <v-bottom-navigation grow absolute="true" class="main-nav-footer">
-      <v-btn to="/">
+      <v-btn to="/healthy_lifestyle/">
         <v-icon>mdi-notebook</v-icon>
         Дневник
       </v-btn>
-      <v-btn to="/statistics">
+      <v-btn to="/healthy_lifestyle/statistics">
         <v-icon>mdi-heart</v-icon>
         Статистика
       </v-btn>
-      <v-btn to="/foodDirectory">
+      <v-btn to="/healthy_lifestyle/foodDirectory">
         <v-icon>mdi-basket</v-icon>
         Справочник
       </v-btn>

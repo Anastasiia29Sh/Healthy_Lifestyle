@@ -22,12 +22,13 @@ export const useLisfFoodsStore = defineStore('listFoods', () => {
 	});
 	// список продуктов конкретного дня и конкретного приема пищи
 	const listFoodSpecificSectionDate = ref([]);
-
+	// http://localhost:3000/foods
 	// Получить весь список продуктов из бд
 	async function fetchFoods() {
-		axios.get("http://localhost:3000/foods").then((res) => {
+		axios.get("https://anastasiia29sh.github.io/api_food/food.json").then((res) => {
+			// console.log(res.data.foods);
 			let i = 0;
-			foodsBD.value = res.data.map((item) => {
+			foodsBD.value = res.data.foods.map((item) => {
 				item.calories = parseFloat(item.calories.replace(' кКал', ''));
 				item.proteins = parseFloat(item.proteins.replace(' г', ''));
 				item.fats = parseFloat(item.fats.replace(' г', ''));
